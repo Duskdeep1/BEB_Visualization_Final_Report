@@ -1,0 +1,57 @@
+
+Gurobi 9.5.1 (win64, gurobi_cl) logging started Thu Mar 17 10:44:17 2022
+
+Set parameter Username
+Set parameter LogFile to value "gurobi.log"
+Academic license - for non-commercial use only - expires 2023-03-09
+Using license file C:\Users\kuang\gurobi.lic
+
+Gurobi Optimizer version 9.5.1 build v9.5.1rc2 (win64)
+Copyright (c) 2022, Gurobi Optimization, LLC
+
+Read LP format model from file ele_bus_v61.lp
+Reading time = 0.05 seconds
+: 29292 rows, 9624 columns, 60742 nonzeros
+Thread count: 4 physical cores, 8 logical processors, using up to 8 threads
+Optimize a model with 29292 rows, 9624 columns and 60742 nonzeros
+Model fingerprint: 0xa04056bd
+Variable types: 4568 continuous, 5056 integer (4984 binary)
+Coefficient statistics:
+  Matrix range     [3e-01, 6e+02]
+  Objective range  [2e-02, 3e+05]
+  Bounds range     [1e+00, 1e+00]
+  RHS range        [2e+00, 6e+02]
+Presolve removed 22160 rows and 6815 columns
+Presolve time: 0.22s
+Presolved: 7132 rows, 2809 columns, 18113 nonzeros
+Variable types: 1137 continuous, 1672 integer (1629 binary)
+Found heuristic solution: objective -0.0000000
+
+Root relaxation: objective 1.398030e+06, 2240 iterations, 0.02 seconds (0.01 work units)
+
+    Nodes    |    Current Node    |     Objective Bounds      |     Work
+ Expl Unexpl |  Obj  Depth IntInf | Incumbent    BestBd   Gap | It/Node Time
+
+     0     0 1398029.70    0   71   -0.00000 1398029.70      -     -    0s
+H    0     0                    1079247.7113 1398029.70  29.5%     -    0s
+H    0     0                    1257936.5972 1398029.70  11.1%     -    0s
+H    0     0                    1324200.3797 1398029.70  5.58%     -    0s
+H    0     0                    1350874.2506 1398029.70  3.49%     -    0s
+     0     0 1387385.09    0   10 1350874.25 1387385.09  2.70%     -    0s
+     0     0 1377320.68    0    2 1350874.25 1377320.68  1.96%     -    0s
+
+Cutting planes:
+  Gomory: 1
+  MIR: 1
+  Mod-K: 1
+
+Explored 1 nodes (3085 simplex iterations) in 0.48 seconds (0.27 work units)
+Thread count was 8 (of 8 available processors)
+
+Solution count 8: 1.35087e+06 1.35087e+06 1.3242e+06 ... -0
+
+Optimal solution found (tolerance 1.00e-04)
+Best objective 1.350874250590e+06, best bound 1.350874250590e+06, gap 0.0000%
+
+Wrote result file 'ele_bus_v61.sol'
+
